@@ -8,7 +8,7 @@ const Counter = () => {
   return (
     <div className='mt-8'>
       <div className='grid place-items-center m-4'>
-        <p className='text-lg '>{count}</p>
+        <p className='text-3xl'>{count}</p>
       </div>
       <div>
         <button
