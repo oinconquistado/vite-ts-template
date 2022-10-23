@@ -1,3 +1,4 @@
+import React from "react";
 import DataContext from "@/context/DataContext";
 
 const Counter = () => {
@@ -16,7 +17,7 @@ const Counter = () => {
           +
         </button>
         <button
-          className='b-g-slate-200 h-10 w-8'
+          className='bg-slate-200 h-10 w-8'
           onClick={() => setCount(count - 1)}>
           -
         </button>
