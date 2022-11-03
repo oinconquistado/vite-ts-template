@@ -1,14 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import './index.css'
-
+import "./index.css";
 import { Provider as ProviderJotai } from "jotai";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ProviderJotai>
-      <App />
+      <RouterProvider router={router} />
     </ProviderJotai>
   </React.StrictMode>
 );
