@@ -1,12 +1,10 @@
-import { Counter } from "@/components";
+import { Counter, Gallery } from "@/components";
 
 function App() {
   return (
-    <div className='App'>
-      <div className='grid place-items-center'>
-        <div>gallery</div>
-        <Counter />
-      </div>
+    <div className='App grid h-full w-screen place-items-center '>
+      <Gallery />
+      <Counter />
     </div>
   );
 }
